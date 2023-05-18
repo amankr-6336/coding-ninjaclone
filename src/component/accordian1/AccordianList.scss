@@ -1,0 +1,126 @@
+.accordianlist {
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .inneraccordianlist {
+    width: 90%;
+    // border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .displaypart {
+      width: 100%;
+      height: 100%;
+      .headings {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        h2 {
+          width: 100%;
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .hiddenpart {
+    }
+  }
+}
+
+.accordianlist1 {
+  min-height: fit-content;
+  width: 100%;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .inneraccordianlist {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .displaypart {
+      width: 100%;
+      height: 100%;
+      .headings {
+        // border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        h2 {
+            font-size: 1.3rem;
+          width: 100%;
+        }
+      }
+    }
+    .hiddenpart{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        h1{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        .tickbox{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+
+            .ic{
+                font-size: 1.5rem;
+            }
+            P{
+                font-size: 0.8rem;
+            }
+
+        }
+        .para2{
+            p{
+                font-size: 0.8rem;
+            }
+        }
+        .numbers{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 50px;
+            .number1{
+                width: 28%;
+            }
+        }
+        .image{
+            width: 100%;
+            .innerimage{
+                width: 100%;
+                height: fit-content;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+  }
+}

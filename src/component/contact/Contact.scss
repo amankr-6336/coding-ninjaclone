@@ -1,0 +1,153 @@
+.contact {
+//   border: 2px solid red;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: #fffaf4;
+  .innercontact {
+    // border: 2px solid green;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    .form {
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      position: absolute;
+      right: 80px;
+      width: 35%;
+      height: 80%;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .innerform {
+        width: 80%;
+        height: 90%;
+
+        form {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+
+          input {
+            width: 100%;
+            padding: 15px 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid gray;
+          }
+          .but {
+            background-color: orange;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .rectangle {
+      width: 100%;
+      height: 70%;
+      background-color: beige;
+      .contactdetails {
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .innercontactdetails {
+          width: 70%;
+          height: 70%;
+
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 20px;
+
+          .combined {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+          }
+        }
+      }
+    }
+    .cone {
+      width: 0;
+      height: 0;
+      border-left: 570px solid transparent;
+      border-right: 570px solid transparent;
+      border-top: 150px solid beige;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    height: 450px;
+    .innercontact {
+      width: 90%;
+      overflow: hidden;
+      .form {
+        width: 80%;
+        height: 40%;
+        bottom: 170px;
+        left: auto;
+        display: none;
+        .innerform {
+          form {
+          }
+        }
+      }
+      .rectangle {
+        height: 90%;
+        // border: 2px solid black;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .contactdetails {
+          width: 100%;
+          .innercontactdetails {
+            justify-content: flex-start;
+            align-items: center;
+            height: 80%;
+            width: 90%;
+            h2{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            h2,p{
+               text-align: center;
+               width: 90%;
+            }
+            .combined {
+                width: 90%;
+                // border: 2px solid red;
+
+                .numbers{
+                   
+                    p{
+                        width: 100%;
+                        text-align: start;
+                    }
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}

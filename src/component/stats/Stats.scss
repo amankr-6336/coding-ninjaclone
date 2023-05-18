@@ -1,0 +1,206 @@
+.stats {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(44, 44, 93);
+  .innerstats {
+    width: 80%;
+    height: 350px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .left {
+      width: 50%;
+      height: 100%;
+  
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+     
+
+      .innerlefttext {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+        h3,h1,p{
+            color: white;
+        }
+        h3{
+            background-color: rgba(255, 255, 255, 0.214);
+            padding: 7px 14px;
+            border-radius: 20px;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: 100%;
+     
+     
+      position: relative;
+      #box1{
+        position: absolute;
+        left: 100px;
+        top: 30px;
+       
+        width: 150px;
+        height: 150px;
+        background-image: url('../../asset/hex-9602.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+          color: white;
+          text-align: center;
+        }
+        p{
+           color: white;
+          width: 80%;
+          text-align: center;
+           font-size: 0.7rem;
+        }
+      }
+
+      #box2{
+        position: absolute;
+        left: 250px;
+        top: 30px;
+       
+        width: 150px;
+        height: 150px;
+        background-image: url('../../asset/hex-9602.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+          color: white;
+          text-align: center;
+        }
+        p{
+           color: white;
+          width: 80%;
+          text-align: center;
+           font-size: 0.7rem;
+        }
+      }
+
+      #box3{
+        position: absolute;
+        left: 175px;
+        top: 158px;
+      
+        width: 150px;
+        height: 150px;
+        background-image: url('../../asset/hex-9602.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+          color: white;
+          text-align: center;
+        }
+        p{
+           color: white;
+          width: 80%;
+          text-align: center;
+           font-size: 0.7rem;
+        }
+      }
+
+      #box4{
+        position: absolute;
+        left: 325px;
+        top: 158px;
+       
+        width: 150px;
+        height: 150px;
+        background-image: url('../../asset/hex-9602.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+          color: white;
+          text-align: center;
+        }
+        p{
+           color: white;
+          width: 80%;
+          text-align: center;
+           font-size: 0.7rem;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width:600px) {
+  .stats{
+    .innerstats{
+      width: 90%;
+      flex-direction: column;
+      height: 650px;
+      .left{
+        width: 100%;
+        .innerlefttext{
+          width: 100%;
+        }
+
+
+      }
+      .right{
+        // border: 2px solid red;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        #box1{
+          left: 10px;
+          width: 130px;
+          height: 130px;
+        }
+        #box2{
+           left: 135px;
+           width: 130px;
+           height: 130px;
+        }
+        #box3{
+          width: 130px;
+          height: 130px;
+          left: 74px;
+          top: 140px;
+        }
+        #box4{
+          width: 130px;
+          height: 130px;
+          left: 202px;
+          top: 140px;
+        } 
+      }
+    }
+  }
+}

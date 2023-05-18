@@ -1,0 +1,358 @@
+.navbar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090f40;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+
+
+    .innernavbar{
+        width: 80%;
+        height: 60px;
+        // border: 2px solid red;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         
+         .left{
+           width: 70%;
+           height: 100%;
+            // border:  2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .hamburger{
+                display: none;
+                width: 60px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+                .innerhamburger{
+                    display: none;
+                     width: 80%;
+                     height: 70%;
+                    //  border:  2px solid white;
+                     position: relative;
+                   
+                     #one{
+                        width: 60%;
+                        height: 3px;
+                        background-color: white;
+                        display:block;
+                        border-radius: 5px;
+                        margin: 7px auto;
+                        transform: rotate(0deg);
+                        transition: all ease-in-out 0.2s;
+                        
+                     }
+                     #two{
+                        width: 60%;
+                        height: 3px;
+                        background-color: white;
+                        display: block;
+                        border-radius: 5px;
+                        margin: 1px auto;
+                        opacity: 1;
+                        transition: all ease-in-out 0.2s;
+                     }
+                     #three{
+                        width: 60%;
+                        height: 3px;
+                        background-color: white;
+                        display: block;
+                        border-radius: 5px;
+                        margin: 7px auto;
+                        transform: rotate(0deg);
+                        transition: all ease-in-out 0.2s;
+                        
+                     }
+                }
+
+                .innerhamburger2{
+                    width: 80%;
+                     height: 70%;
+                     position: relative;
+                    // border: 2px solid red;
+                    text-align: center;
+                
+                    #two{
+                        width: 60%;
+                        height: 3px;
+                        background-color: white;
+                        display: block;
+                        border-radius: 5px; 
+                        position: absolute;
+                        text-align: center;
+                        left: 10px;
+                        top: 20px;
+                        opacity: 0;
+                        transition: all ease-in-out 0.25s;
+                       
+                      
+                    }
+
+                    #one{
+                       
+                        width: 60%;
+                        height: 3px;
+                        background-color: white;
+                        display: block;
+                        border-radius: 5px;
+                        position: absolute;
+                        left: 10px;
+                        top: 20px;
+                        transform: rotate(-45deg);
+                        transition: all ease-in-out 0.5s;
+                        transition-delay: 0.5s;
+                       
+                    }
+                    #three{
+                        width: 60%;
+                        height: 3px;
+                        background-color: white;
+                        display: block;
+                        border-radius: 5px;
+                        position: absolute;
+                        left: 10px;
+                        top: 20px;
+                        transform: rotate(45deg);
+                        transition: all ease-in-out 0.5s;
+                        transition-delay: 0.5s;
+                        
+                    }
+                }
+
+                  
+                
+            }
+            
+           .logo{
+            // border: 2px solid red;
+            width: 90px;
+            height: 50%;
+           
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+           }
+
+           .option{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            height: 100%;
+            .inneroption{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 60px;
+               
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+
+                        .name{
+                           
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .c{
+                                font-size: 0.8rem;
+                                font-weight:700;
+                                color: rgb(215, 212, 212);
+                            }
+
+                        }
+                        .name:hover{
+                            border-bottom: 5px solid orange;
+                        }
+                    }
+                }
+            }
+           }
+         }
+
+         .right{
+            // border: 2px solid black;
+            width: 30%;
+            height: 100%;
+            .innerright{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                .login{
+                    padding: 10px 15px;
+                    font-size: 0.9rem;
+                    border-radius: 7px;
+                    border: none;
+                   color: rgb(255, 153, 0);
+                }
+                .login:hover{
+                    cursor: pointer;
+                    background-color: rgb(250, 236, 208);
+                }
+                .enroll{
+                    border: none;
+                    padding: 14px 18px;
+                    font-size: 0.9rem;
+                    border-radius: 7px;
+                    color: white;
+                    background: rgb(246,134,6);
+                    background: linear-gradient(90deg, rgba(246,134,6,1) 70%, rgba(248,188,6,1) 100%);
+                  }
+
+                  .enroll:hover{
+                    cursor: pointer;
+                    background: rgb(246,134,6);
+                    background: linear-gradient(270deg, rgba(246,134,6,1) 70%, rgba(248,188,6,1) 100%);
+                  }
+            }
+         }
+
+    }
+
+    .modal1{
+        position: absolute;
+        background-color: rgb(243, 232, 232);
+        border-radius: 15px;
+        width: 600px;
+        height: 400px;
+        top: 65px;
+        left: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .innermodal1{
+              width: 90%;
+              height: 90%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+
+              .exp{
+                border:  2px solid black;
+                width: 100%;
+                height: 10%;
+                border-bottom: 1px solid black;
+                h2{
+                   font-size: 1rem;
+                }
+              }
+
+              .list{
+                width: 100%;
+                height: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid black;
+                .leftlist{
+                    width: 50%;
+                    height: 100%;
+                    border:  2px solid red;
+                }
+
+                .rightlist{
+                    width: 50%;
+                    height: 100%;
+                    border:  2px solid red;
+                }
+              }
+        }
+    }
+
+    .modal2{
+        position: absolute;
+        background-color: rgb(243, 232, 232);
+        border-radius: 15px;
+        width:900px;
+        height: 300px;
+        top: 65px;
+        left: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .innermodal2{
+            width: 90%;
+            height: 90%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .leftm{
+                width: 33%;
+                height: 100%;
+            }
+            .middlem{
+                width: 33%;
+                height: 100%;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+            }
+            .rightm{
+                width: 33%;
+                height: 100%;
+            }
+        }
+    }
+
+    .modal3{
+        position: absolute;
+        background-color: rgb(243, 232, 232);
+        border-radius: 15px;
+        width:200px;
+        height: 300px;
+        top: 65px;
+        left: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // .innermodal3{
+
+        // }
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .navbar{
+        width: 100%;
+        background-color: rgb(72, 68, 68);
+        .innernavbar{
+            width: 100%;
+             .left{
+                border: 2px solid red;
+                left:50% ;
+                .option{
+                    display:none;
+                }
+             }
+             .right{
+                width: 50%;
+                border: 2px solid white;
+                .innerright{
+                    .enroll{
+                        display: none;
+                    }
+                }
+             }
+        }
+    }
+}

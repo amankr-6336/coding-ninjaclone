@@ -1,0 +1,29 @@
+.accordian1{
+    width: 100%;
+    height: fit-content;
+    .inneraccordian1{
+        margin-bottom: 50px;
+        min-height: 600px;
+        max-height: 1300px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        // gap: 50px;
+        // border: 2px solid red;
+        .acbox{
+            min-height: 100px;
+            width: 100%;
+         
+            // border: 2px solid black;
+        }
+        .open{
+             min-height: 200px;
+             width: 100%;
+         
+             border: 2px solid black;
+        }
+
+    }
+}

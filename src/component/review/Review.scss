@@ -1,0 +1,188 @@
+.review{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFAF4;
+    .innerreview{
+        width: 75%;
+        height: fit-content;
+        .reviewsection{
+            margin-top: 50px;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 50px;
+            .box{
+                width: 30%;
+                height: 100%;
+                // border: 2px solid black;
+                background-color: #0C134F;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 15px;
+                h1{
+                    color: white;
+                    font-size: 3rem;
+                }
+                .star{
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+                   flex-direction: column;
+                   gap: 10px;
+                    .innerstar{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2rem;
+                    color: orange;
+                    gap: 5px;
+                        p{
+                            color: white;
+                        }
+                    }
+                    p{
+                        color: white;
+                    }
+                }
+
+            }
+        }
+
+        .platform{
+            margin-top: 70px;
+            width: 100%;
+            height: fit-content;
+            // border: 2px solid brown;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            .innerplatform{
+                width: 100%;
+                height: 800px;
+                // height: fit-content;
+
+                .cone{
+                    width: 100%;
+                    height: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    overflow-x: hidden;
+                    // border: 2px solid black;
+                    background-color: beige;
+                    position: relative;
+                    #cone1{
+                       
+                        width: 0;
+                        height: 0;
+                        border-top: 0px solid transparent;
+                        border-left: 610px solid   #FFFAF4;
+                        border-bottom: 150px solid transparent;
+                    }
+
+                    #cone2{
+                        width: 0;
+                        height: 0;
+                        border-top: 0px solid transparent;
+                        border-right: 610px solid #FFFAF4;
+                        border-bottom: 150px solid transparent;
+                    }
+
+                    .context{
+                        position: absolute;
+                        bottom: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 20px;
+                        h1{
+                           font-family: 500;
+                           color: rgb(61, 60, 60);
+                        }
+                        p{
+                          font-size: 1.1rem;
+                        }
+                    }
+
+                    
+                    
+                }
+
+                .accordian{
+                    // border: 10px solid black;
+                    width: 100%;
+                    height: 600px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: beige;
+
+                   .inneraccordian{
+                    width: 95%;
+                    height: 100%;
+                   }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .review{
+        .innerreview{
+
+            width: 90%;
+            .reviewsection{
+                //  border: 2px solid red;
+                height: 400px;
+                flex-wrap: wrap;
+                gap: 0px;
+              
+                .box{
+                    width: 45%;
+                    height: 150px;
+                    gap: 5px;
+                    h1{
+                       font-size: 1.4rem;
+                    }
+                    .star{
+                       .innerstar{
+                         font-size: 1rem;
+                       }
+                    }
+                    h1{
+
+                    }
+                }
+            }
+            .platform{
+                
+                .innerplatform{
+                    height: fit-content;
+                    .accordian{
+                        width: 100%;
+                        height: fit-content;
+                        .inneraccordian{
+                            width: 100%;
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}
