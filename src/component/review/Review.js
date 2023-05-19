@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import './Review.scss'
 import Accordian from '../accordian/Accordian'
 import {ImStarFull,ImStarHalf} from 'react-icons/im'
@@ -6,15 +6,15 @@ import Accordian1 from '../accordian1/Accordian1'
 
 
 function Review() {
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 900;
-  useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener("resize", handleWindowResize);
+  // const [width, setWidth] = useState(window.innerWidth);
+  // const breakpoint = 900;
+  // useEffect(() => {
+  //   const handleWindowResize = () => setWidth(window.innerWidth)
+  //   window.addEventListener("resize", handleWindowResize);
 
-    // Return a function from the effect that removes the event listener
-    // return () => window.removeEventListener("resize", handleWindowResize);
-  }, []);
+  //   // Return a function from the effect that removes the event listener
+  //   // return () => window.removeEventListener("resize", handleWindowResize);
+  // }, []);
 
   return (
     <div className="review">
