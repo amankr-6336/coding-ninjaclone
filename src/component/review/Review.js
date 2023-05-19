@@ -7,13 +7,13 @@ import Accordian1 from '../accordian1/Accordian1'
 
 function Review() {
   const [width, setWidth] = useState(window.innerWidth);
-  const breakpoint = 620;
+  const breakpoint = 900;
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth)
     window.addEventListener("resize", handleWindowResize);
 
     // Return a function from the effect that removes the event listener
-    return () => window.removeEventListener("resize", handleWindowResize);
+    // return () => window.removeEventListener("resize", handleWindowResize);
   }, []);
 
   return (
@@ -77,6 +77,9 @@ function Review() {
             <div className="accordian">
               <div className="inneraccordian">
                 {width < breakpoint ? <Accordian1/>:<Accordian/>}
+                
+             
+              
               </div>
             </div>
 
