@@ -76,7 +76,13 @@ function Review() {
             </div>
             <div className="accordian">
               <div className="inneraccordian">
-                {width < breakpoint ? <Accordian1/>:<Accordian/>}
+                {/* {width < breakpoint ? <Accordian1/>:<Accordian/>} */}
+                <div className="first">
+                  <Accordian1/>
+                </div>
+                <div className="second">
+                  <Accordian/>
+                </div>
                 
              
               

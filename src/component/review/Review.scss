@@ -134,6 +134,14 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                     .first{
+                        display: none;
+                        width: 100%;
+                     }
+                     .second{
+                        // border: 2px solid red;
+                        width: 100%;
+                     }
                      
                    }
                 }
@@ -183,6 +191,12 @@
                             width: 100%;
                             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
                              
+                            .first{
+                               display: block;
+                            }
+                            .second{
+                                 display: none;
+                            }
                         }
                     }
                 }
@@ -193,7 +207,7 @@
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (min-width:600px) and (max-width:900px) {
     .review{
         .innerreview{
 
@@ -231,7 +245,12 @@
                         .inneraccordian{
                             width: 100%;
                             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+                            .first{
+                              display: block ;
+                            }
+                            .second{
+                            display: none;
+                            }
                             
                         }
                     }
@@ -243,7 +262,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:900px) and (max-width:1200px) {
     .review{
         .innerreview{
 
@@ -281,7 +300,12 @@
                         .inneraccordian{
                             width: 100%;
                             box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                            
+                            .first{
+                                display: none;
+                            }
+                            .second{
+                                display: block;
+                            }
                             
                            
                         }
