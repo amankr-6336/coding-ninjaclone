@@ -127,8 +127,18 @@
                 scroll-snap-type: x mandatory;
 
                 .eventbox{
+                    width: 300px;
+                    height: 270px;
                     flex-shrink: 0;
                     scroll-snap-align: start;
+                    .innereventbox{
+                        .topbox{
+                            .alert{
+                                width: 80%;
+                            }
+                        }
+                    }
+                    
                 }
             }
             .listevents::-webkit-scrollbar {

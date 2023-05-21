@@ -9,7 +9,7 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
-
+        // border: 2px solid red;
         .minibar{
             
             width: 100%;
@@ -25,7 +25,7 @@
                 align-items: center;
  
                 li{
-
+                    cursor: pointer;
                     list-style: none;
                     height: 80%;
                     .minibarlist{

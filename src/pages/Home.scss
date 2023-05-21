@@ -4,52 +4,72 @@
     .navbarr{
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
     }
     .main{
         width: 100%;
         height: fit-content;
         background-color: #f1f2f2;
+        overflow-x: hidden;
         
     }
     .report{
         width: 100%;
        height: fit-content;
        background-color: #f1f2f2;
+       overflow-x: hidden;
         
     }
     .statss{
           width: 100%;
        height: fit-content;
+       overflow-x: hidden;
     }
 
     .placements{
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
     }
     .reviews{
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
     }
     .coursel{
         width: 100%;
         // border: 10px solid olive;
         height: fit-content;
+        overflow-x: hidden;
     }
     .contacts{
        
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
     }
     .news{
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
     }
     .events{
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
     }
     .footers{
         width: 100%;
         height: fit-content;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .home{
+        .navbarr{
+            width: 100%;
+            height: fit-content;
+        }
     }
 }
