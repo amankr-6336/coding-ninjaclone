@@ -279,6 +279,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         .innermodal1{
               width: 90%;
               height: 90%;
@@ -385,6 +386,7 @@
 
     .modal2{
         position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         background-color: #F0F0F0;
         border-radius: 15px;
         width:350px;
@@ -435,6 +437,7 @@
 
     .modal3{
         position: absolute;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         background-color: #F0F0F0;
         border-radius: 15px;
         width:200px;

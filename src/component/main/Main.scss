@@ -2,6 +2,8 @@
   width: 100%;
   height: fit-content;
   background-color: #f1f2f2;
+  overflow:auto;
+ 
   .innermain {
     width: 100%;
 
@@ -10,6 +12,7 @@
       background-image: url("../../asset/mmmmm.jpg");
       background-size: cover;
       height: 680px;
+     
       display: flex;
       justify-content: flex-end;
       align-items: center;
@@ -17,7 +20,7 @@
 
       .topsection {
         width: 100%;
-        height: 70%;
+        height: 70%; // border: 5px solid red;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -109,13 +112,19 @@
       }
 
       .bottomsection {
+        // border: 2px solid rgb(204, 25, 25);
         width: 100%;
         height: 27%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         position: relative;
         // background-color: #f1f2f2;
+        .hideme{
+          // border: 5px solid rgb(209, 37, 37);
+          width: 100%;
+          height: 100%;
+        }
 
         .lefttilt {
           width: 50%;
@@ -124,6 +133,8 @@
           border-top: 160px solid transparent;
           border-left: 750px solid #f1f2f2;
           border-bottom: 25px solid #f1f2f2;
+          // border-left: 750px solid #354141;
+          // border-bottom: 25px solid #262b2b;
         }
 
         .righttilt {
@@ -191,6 +202,10 @@
       }
     }
   }
+}
+
+.main::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 600px) {

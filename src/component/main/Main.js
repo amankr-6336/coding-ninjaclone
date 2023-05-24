@@ -35,6 +35,9 @@ function Main() {
                         
                     </div>
                     <div className="righttilt">
+                    <div className="hideme">
+                        hh
+                    </div>
 
                     <div className="flash">
                         <div className="innerflash">
